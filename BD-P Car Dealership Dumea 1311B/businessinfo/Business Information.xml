@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="CE745878-E3EA-C1A1-573F-6AF3E6B7DC69">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 10:52:25 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

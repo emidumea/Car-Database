@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="501E3729-C1E7-E9E0-3216-622F35D4C5AE" name="tranzactii">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>21ACC378-C3B4-1D2C-606C-8F0B0C60D0EF</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tranzactie" id="DA3E9E5F-CD8C-23B4-ACB7-3874AFAEB07B">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>52814D51-623D-D4BD-C9BF-21B887903FE0</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>5001</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="C48EB345-67C7-C5B3-54C7-4E2911440141">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>FFE0E79B-5776-06CB-C0B5-9993CAF917F4</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="304B5782-D3BB-3FAC-1CDC-9892327AB4B0">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>54E43357-8900-7A19-093E-212A97EBB715</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19F0AA4B-D222-E1E0-0690-50E7EAD1B515" referredColumn="2E262CA3-35F8-7607-C18F-5BAAA5270B5E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B444CA96-F5AD-DA0E-3653-1F71A3641771" name="tranzactii_de_vanzare_PK">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>BC030D7D-C4A3-3FD5-F78D-8227DDE9EFFD</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA3E9E5F-CD8C-23B4-ACB7-3874AFAEB07B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D09A67BB-4112-63D8-F663-252F86BC3C5B" name="clienti_tranzactii_fk">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>89D1D22B-E7C3-874A-E303-C1E33D781BB7</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="304B5782-D3BB-3FAC-1CDC-9892327AB4B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

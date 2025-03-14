@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="934E27D2-CFE6-2068-AEAA-2C617151485E" name="dotari">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>057ABBEF-8B37-BB4E-ECBE-CDB9D61A1A64</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dotare" id="F80A6B46-D1FA-E545-F12D-A93B469F4B5D">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>35E416B1-1E3B-C0FE-9386-425F3295FD94</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>501</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriere_dotare" id="F9F7EF72-8116-0D3D-9D7A-7832429685DF">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>4C5285EC-6F75-8C57-8E73-9DD0375F6F96</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41F2DE79-0107-4764-6F39-085BB2A4D1B4" name="dotari_PK">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>3A7EFE00-7BBA-3443-F7B8-A9799FEA2D3F</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F80A6B46-D1FA-E545-F12D-A93B469F4B5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

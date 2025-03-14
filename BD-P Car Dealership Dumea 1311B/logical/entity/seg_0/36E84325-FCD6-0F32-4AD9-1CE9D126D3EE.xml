@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36E84325-FCD6-0F32-4AD9-1CE9D126D3EE" name="clienti">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 11:23:02 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="5F72882A-C17E-7F8F-381C-3A15183E8797">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 11:23:22 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="F47DBF9E-8B5D-3839-CF30-52C296892C09">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 11:23:35 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="2FDB4971-0C4F-AA7D-6CBA-CDFBB6680C09">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 11:23:54 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A31857F9-E850-6245-08AB-9E7B8DD14257" name="clienti PK">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 11:26:00 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F72882A-C17E-7F8F-381C-3A15183E8797</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

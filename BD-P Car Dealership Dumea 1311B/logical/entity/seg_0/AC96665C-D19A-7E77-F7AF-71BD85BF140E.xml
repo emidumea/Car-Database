@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC96665C-D19A-7E77-F7AF-71BD85BF140E" name="date_vehicule">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 11:29:00 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="an_fabricatie" id="34F98127-1952-5D08-674F-22BFC346129A">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 11:46:39 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_combustibil" id="D8B985FB-BFAB-385D-73C7-6A1EC8677CAB">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 11:46:52 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<constraintName>date_veh_tip_comb_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Benzina" description=""/>
+<valueDef value="Electric" description=""/>
+<valueDef value="Hybrid" description=""/>
+<valueDef value="Motorina" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kilometraj" id="FE4EA0BF-84CC-5E29-A7E2-EA313A2E13CC">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 11:47:13 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<constraintName>date_veh_km_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="kilometraj &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_vehicul" id="7FE4596D-BD41-5C5F-EFAE-7CB48CFA7148">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 10:46:25 UTC</createdTime>
+<generatorID>7A6814F3-0613-717B-D13F-C4964115A56C</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<referedAttribute>741D09D7-D037-CD50-B872-3E2E071BA5BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

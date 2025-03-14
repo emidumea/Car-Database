@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F64F1D7C-01AF-536E-B8F6-189E7200F8A8" name="vehicul_dotari">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 12:00:28 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cost_suplimentar" id="3FB5EF93-0F56-381B-DE25-2E24FF134D56">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-09 12:01:43 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<constraintName>veh_dotari_cost_supl_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cost_suplimentar &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_vehicul" id="61C2C6B2-9E57-9597-BA98-91DA6883C929">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 10:44:36 UTC</createdTime>
+<generatorID>6134AAAD-0F19-AB80-B8A1-673011E19E0B</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<referedAttribute>741D09D7-D037-CD50-B872-3E2E071BA5BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_dotare" id="A520177D-7B8E-E70C-0FA1-0994C790789A">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 10:45:51 UTC</createdTime>
+<generatorID>69DDF395-B2B4-EA70-A73B-BC213103D79D</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<referedAttribute>35E416B1-1E3B-C0FE-9386-425F3295FD94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB58324B-B2EB-2A35-CC4B-EDB3DB96E93C" containerWithKeyObject="98D2D9E6-DE6A-DDE6-529E-80A6C492E709" localFKIndex="EB7D0236-CB80-03DA-BCAB-E24EBF4A9329" name="clienti_test_drive_fk">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>5650167C-C52B-1999-1DD2-4DD5B62420A2</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<referredTableLongName>clienti</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCCA6459-7F5F-57EA-7C29-09BA4CF7F089</referredTableID>
+<keyObject>BE15AB6B-B2E7-DE96-62E1-BBFBB7F1FE32</keyObject>
+<referredKeyID>BE15AB6B-B2E7-DE96-62E1-BBFBB7F1FE32</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_client</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

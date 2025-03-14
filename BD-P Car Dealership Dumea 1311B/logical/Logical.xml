@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="BE6F794C-A631-465C-88C4-33BB01EC9287" mainViewID="ACCB58BE-31CB-2FE1-B487-54731E0E97FE">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 10:52:25 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

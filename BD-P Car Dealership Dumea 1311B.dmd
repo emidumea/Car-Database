@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD-P Car Dealership Dumea 1311B" id="02A15264-B362-C15E-3F6F-921E6BF8B1A3" version="3.5">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-10-26 10:52:25 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>02A15264-B362-C15E-3F6F-921E6BF8B1A3</designId>
+</OSDM_Design>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="12F9B814-E3D1-8A71-4BCA-AA28183C92BA" containerWithKeyObject="3484329F-1E57-1F2C-9E17-D5DC4A6A4A8E" localFKIndex="9ACF9602-BEE4-CCB8-5300-64561650AA61" name="dotari_vehicul_dotari_fk">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 12:19:14 UTC</createdTime>
+<generatorID>69DDF395-B2B4-EA70-A73B-BC213103D79D</generatorID>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<referredTableLongName>dotari</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>934E27D2-CFE6-2068-AEAA-2C617151485E</referredTableID>
+<keyObject>41F2DE79-0107-4764-6F39-085BB2A4D1B4</keyObject>
+<referredKeyID>41F2DE79-0107-4764-6F39-085BB2A4D1B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_dotare</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

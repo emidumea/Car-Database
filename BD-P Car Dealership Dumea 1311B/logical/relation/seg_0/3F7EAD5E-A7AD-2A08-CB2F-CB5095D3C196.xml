@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vehicule_date_tranzactii_fk" directorySegmentName="seg_0" id="3F7EAD5E-A7AD-2A08-CB2F-CB5095D3C196">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 10:47:45 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<sourcePk>9DC72A4F-A7C4-610D-354F-637AFC16B933</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>a fost cumparat in tranzactia</nameOnSource>
+<nameOnTarget>s-a vandut vehiculul</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>090EAA98-EEE2-831C-699F-D8E98ECFAD83</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F7A7DEF6-5322-35D5-A40F-F303905719D1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

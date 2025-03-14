@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vehicule_vehicul_dotare_fk" directorySegmentName="seg_0" id="6134AAAD-0F19-AB80-B8A1-673011E19E0B">
+<createdBy>emi_d</createdBy>
+<createdTime>2024-11-17 10:44:36 UTC</createdTime>
+<ownerDesignName>BD-P Car Dealership Dumea 1311B</ownerDesignName>
+<engineerTo>
+<item key="72431A29-6CF7-1493-4CB5-F9004A3533DE" value="true"/>
+</engineerTo>
+<sourcePk>9DC72A4F-A7C4-610D-354F-637AFC16B933</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are dotarea</nameOnSource>
+<nameOnTarget>apartine vehiculului</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>090EAA98-EEE2-831C-699F-D8E98ECFAD83</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F64F1D7C-01AF-536E-B8F6-189E7200F8A8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
