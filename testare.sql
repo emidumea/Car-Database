@@ -14,7 +14,6 @@ FROM clienti c
 JOIN test_drive td ON c.id_client = td.id_client
 JOIN vehicule v ON td.cod_vehicul = v.cod_vehicul;
 
-
 -- Vizualizare dotari vehicule si costurile lor suplimentare
 SELECT v.marca, v.model, d.descriere_dotare, vd.cost_suplimentar
 FROM vehicule v
@@ -50,6 +49,7 @@ FROM tranzactii t
 JOIN date_tranzactii dt ON t.id_tranzactie = dt.id_tranzactie
 GROUP BY TO_CHAR(t.data_tranzactie, 'YYYY-MM')
 ORDER BY luna DESC;
+
 
 -- Testare constrangeri
 
@@ -91,6 +91,11 @@ VALUES (2023, 'Gaz', 5000, 1002);
 -- ORA-02291: integrity constraint (BD131.DOTARI_VEHICUL_DOTARI_FK) violated
 INSERT INTO vehicul_dotari (cost_suplimentar, cod_vehicul, id_dotare) VALUES (100, 1001, 999);
 
+-- Test UK: Un singur test drive pe zi pentru un vehicul
+-- ORA-00001: unique constraint (BD131.TEST_DRIVE_UK) violated
+INSERT INTO test_drive (data_test_drive, cod_vehicul, id_client) VALUES (TO_DATE('03.11.2025', 'DD.MM.YYYY'), 1010, 103);
+INSERT INTO test_drive (data_test_drive, cod_vehicul, id_client) VALUES (TO_DATE('03.11.2025', 'DD.MM.YYYY'), 1010, 105);
+
 -- Operații de modificare
 
 -- Actualizare informații despre client
@@ -114,32 +119,10 @@ DELETE FROM tranzactii WHERE id_client = 101;
 DELETE FROM date_clienti WHERE id_client = 101;
 DELETE FROM clienti WHERE id_client = 101;
 
-
 -- Ștergere vehicul
 DELETE FROM vehicul_dotari WHERE cod_vehicul = 1002;
 DELETE FROM date_tranzactii WHERE cod_vehicul = 1002;
 DELETE FROM tranzactii WHERE id_tranzactie IN (SELECT id_tranzactie FROM date_tranzactii WHERE cod_vehicul = 1002);
-
------------------- Adăugare dotări
-INSERT INTO dotari (id_dotare, descriere_dotare)
-VALUES (401, 'Sistem audio Bose');
-
-INSERT INTO dotari (id_dotare, descriere_dotare)
-VALUES (402, 'Senzori parcare');
-
--- Asocierea dotărilor cu un vehicul
-INSERT INTO vehicul_dotari (cod_vehicul, id_dotare, cost_suplimentar)
-VALUES (1001, 401, 1500);
-
-INSERT INTO vehicul_dotari (cod_vehicul, id_dotare, cost_suplimentar)
-VALUES (1001, 402, 800);
-
--- Verificare asociere dotări
-SELECT v.marca, v.model, d.descriere_dotare, vd.cost_suplimentar
-FROM vehicule v
-JOIN vehicul_dotari vd ON v.cod_vehicul = vd.cod_vehicul
-JOIN dotari d ON vd.id_dotare = d.id_dotare
-WHERE v.cod_vehicul = 1001;
 
 
 COMMIT;
